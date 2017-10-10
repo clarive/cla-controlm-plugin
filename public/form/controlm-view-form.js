@@ -77,7 +77,14 @@
             anchor: '95%',
             hidden: !(params.data.command  == 'runnow' || params.data.command  == 'getjoboutput' || params.data.command  == 'getjoblog')
     });
-
+    var runId = Cla.ui.textField({
+            name: 'runId',
+            fieldLabel: _('Run Id'),
+            value: params.data.runId||'',
+            allowBlank: false,
+            anchor: '95%',
+            hidden: !(params.data.command  == 'getstatusbyrunid')
+    });
     var timeout = Cla.ui.numberField({
             name: 'timeout',
             fieldLabel: _('Timeout (seconds)'),
@@ -103,6 +110,8 @@
             jobName.hide();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'build'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -112,6 +121,8 @@
             jobName.hide();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'deploy'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -121,6 +132,8 @@
             jobName.hide();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'run'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -130,6 +143,8 @@
             jobName.hide();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'runnow'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -139,6 +154,8 @@
             jobName.hide();
             jobId.allowBlank = false;
             jobId.show();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'getstatusbyname'){
             statusComboBox.allowBlank = true;
             statusComboBox.show();
@@ -148,6 +165,8 @@
             jobName.show();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'getstatusbyrunid'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -157,6 +176,8 @@
             jobName.hide();
             jobId.allowBlank = true;
             jobId.hide();
+            runId.allowBlank = false;
+            runId.show();
         } else if (v == 'getjoboutput'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -166,6 +187,8 @@
             jobName.hide();
             jobId.allowBlank = false;
             jobId.show();
+            runId.allowBlank = true;
+            runId.hide();
         } else if (v == 'getjoblog'){
             statusComboBox.allowBlank = true;
             statusComboBox.hide();
@@ -175,6 +198,8 @@
             jobName.hide();
             jobId.allowBlank = false;
             jobId.show();
+            runId.allowBlank = true;
+            runId.hide();
 
         }
     }
@@ -188,6 +213,7 @@
             jsonFile,
             jobName,
             jobId,
+            runId,
             timeout,
             checkTime
                 ]

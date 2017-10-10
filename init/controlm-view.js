@@ -30,6 +30,7 @@ reg.register('service.controlm.action', {
         var jobname   = config.jobName||'*';
         var status    = config.status||[];
         var jobid     = config.jobId||'*';
+        var runid     = config.runId||'';
         var args      = {};
 
         if (typeof(status) == "string") {status = [status]; }
@@ -77,8 +78,7 @@ reg.register('service.controlm.action', {
         if (command == 'getstatusbyname' || command == 'getstatusbyrunid' || command == 'getjoboutput' || command == 'getjoblog' || command == 'runnow' ) {
 
             if (command == 'getstatusbyrunid') {
-                var runid = ctx.stash('ctm_run')["runId"];
-                console.log("runid : " +runid);
+                console.log("runId : " +runid);
                 var url = "https://"+urlBase+":"+port+"/automation-api/run/status/"+runid;
                 objeto = miutil.geting(agent,timeout,pause,url,authorization);
             } else if (command == 'getjoboutput') {
