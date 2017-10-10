@@ -1,0 +1,143 @@
+#: init/controlm-service.js
+msgid "Check Server Availability"
+msgstr "Revise si el Servidor de Control-m está disponible"
+
+#: init/controlm-service.js
+msgid "ControlM server does not  respond correctly"
+msgstr "El servidor de Control-M no responde correctamente"
+
+#: init/controlm-service.js
+msgid "ControlM server OK."
+msgstr "Verificación correcta del servidor de Control-M."
+
+#: init/controlm-view.js
+msgid "Control-M action"
+msgstr "Accion de Control-M"
+
+#: init/controlm-view.js
+msgid "Server CI doesn't exist"
+msgstr "No existe el CI"
+
+#: init/controlm-view.js
+msgid "ControlM server error."
+msgstr "Error del servidor de Control-M"
+
+#: public/form/controlm-form.js
+msgid "Username"
+msgstr "Nombre de usuario"
+
+#: public/form/controlm-form.js
+msgid "Password"
+msgstr "Contraseña"
+
+#: public/form/controlm-form.js
+msgid "URL"
+msgstr "URL"
+
+#: public/form/controlm-form.js
+msgid "Port"
+msgstr "Puerto"
+
+#: public/form/controlm-form.js
+msgid "Verify Server Certificate"
+msgstr "Verifica el Certificado del Servidor"
+
+#: public/form/controlm-service.js public/form/controlm-view-form.js
+msgid "Timeout (seconds)"
+msgstr "Tiempo de espera (segundos)"
+
+#: public/form/controlm-service.js public/form/controlm-view-form.js
+msgid "Refresh time (seconds)"
+msgstr "Tiempo de refresco (segundos)"
+
+#: public/form/controlm-view-form.js
+msgid "Command"
+msgstr "Comando"
+
+#: public/form/controlm-view-form.js
+msgid "Obtain Token"
+msgstr "Obtener Token"
+
+#: public/form/controlm-view-form.js
+msgid "Build"
+msgstr "Construir"
+
+#: public/form/controlm-view-form.js
+msgid "Deploy"
+msgstr "Desplegar"
+
+#: public/form/controlm-view-form.js
+msgid "Run jobs"
+msgstr "Ejecutar jobs"
+
+#: public/form/controlm-view-form.js
+msgid "Run Now the Job"
+msgstr "Ejecutar un Job ahora"
+
+#: public/form/controlm-view-form.js
+msgid "Get jobs names status"
+msgstr "Obtener el estado de los jobs"
+
+#: public/form/controlm-view-form.js
+msgid "Get RunId  Status"
+msgstr "Obtener el estado de una ejecución."
+
+#: public/form/controlm-view-form.js
+msgid "Get Job Output"
+msgstr "Obtener la salida del Job"
+
+#: public/form/controlm-view-form.js
+msgid "Get Job Log"
+msgstr "Obtener el log del Job"
+
+#: public/form/controlm-view-form.js
+msgid "ControlM JSON file"
+msgstr "Fichero JSON de Control-M"
+
+#: public/form/controlm-view-form.js
+msgid "Job Name "
+msgstr "Nombre del Job"
+
+#: public/form/controlm-view-form.js
+msgid "Job Id "
+msgstr "Identificador del Job"
+
+#: public/form/controlm-view-form.js
+msgid "Job Status"
+msgstr "Estado del Job"
+
+#: public/form/controlm-view-form.js
+msgid "Ended OK"
+msgstr "Ha finalizado correctamente"
+
+#: public/form/controlm-view-form.js
+msgid "Ended Not OK"
+msgstr "Ha finalizado en error"
+
+#: public/form/controlm-view-form.js
+msgid "Executing"
+msgstr "En ejecución"
+
+#: public/form/controlm-view-form.js
+msgid "Wait User"
+msgstr "Espera Usuario"
+
+#: public/form/controlm-view-form.js
+msgid "Wait Resource"
+msgstr "Espera Recurso"
+
+#: public/form/controlm-view-form.js
+msgid "Wait Condition"
+msgstr "Condición en espera"
+
+#: public/form/controlm-view-form.js
+msgid "Wait Workload"
+msgstr "Espera por Carga de Trabajo"
+
+#: public/form/controlm-view-form.js
+msgid "Wait Host"
+msgstr "Espera por Host"
+
+#: public/form/controlm-view-form.js
+msgid "Status Unknown"
+msgstr "Estado Desconocido"
