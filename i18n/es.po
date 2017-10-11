@@ -71,8 +71,8 @@ msgid "Run jobs"
 msgstr "Ejecutar jobs"
 
 #: public/form/controlm-view-form.js
-msgid "Run Now the Job"
-msgstr "Ejecutar un Job ahora"
+msgid "Run Now the job"
+msgstr "Ejecutar un job ahora"
 
 #: public/form/controlm-view-form.js
 msgid "Get jobs names status"
@@ -83,28 +83,28 @@ msgid "Get RunId  Status"
 msgstr "Obtener el estado de una ejecución."
 
 #: public/form/controlm-view-form.js
-msgid "Get Job Output"
-msgstr "Obtener la salida del Job"
+msgid "Get job Output"
+msgstr "Obtener la salida del job"
 
 #: public/form/controlm-view-form.js
-msgid "Get Job Log"
-msgstr "Obtener el log del Job"
+msgid "Get job Log"
+msgstr "Obtener el log del job"
 
 #: public/form/controlm-view-form.js
 msgid "ControlM JSON file"
 msgstr "Fichero JSON de Control-M"
 
 #: public/form/controlm-view-form.js
-msgid "Job Name "
-msgstr "Nombre del Job"
+msgid "job Name "
+msgstr "Nombre del job"
 
 #: public/form/controlm-view-form.js
-msgid "Job Id "
-msgstr "Identificador del Job"
+msgid "job Id "
+msgstr "Identificador del job"
 
 #: public/form/controlm-view-form.js
-msgid "Job Status"
-msgstr "Estado del Job"
+msgid "job Status"
+msgstr "Estado del job"
 
 #: public/form/controlm-view-form.js
 msgid "Ended OK"

@@ -4,7 +4,7 @@
             name: 'server',
             value: params.data.server,
             class: 'controlMServer',
-            fieldLabel: 'Control-M Server',
+            fieldLabel: 'Control-M server',
             allowBlank: false,
             anchor: '100%',
             with_vars: 1
@@ -15,18 +15,19 @@
             fieldLabel: _('Operation'),
             data: [
                 ['token',_('Obtain Token')],
-                ['build',_('Test your Workflow')],
-                ['deploy',_('Deploy your Workflow')],
-                ['run',_('Run your Workflow jobs')],
-                ['runnow',_('Run a Job now')],
-                ['getstatusbyname',_('Get status of Jobs by jobname')],
-                ['getstatusbyrunid',_('Get status of Jobs by Run ID')],
-                ['getjoboutput',_('Get Job output')],
-                ['getjoblog',_('Get Job log')]
+                ['build',_('Test your WorkFlow')],
+                ['deploy',_('Deploy your WorkFlow')],
+                ['run',_('Run your WorkFlow jobs')],
+                ['runnow',_('Run a job now')],
+                ['getstatusbyname',_('Get status of jobs by jobname')],
+                ['getstatusbyrunid',_('Get status of jobs by Run ID')],
+                ['getjoboutput',_('Get job output')],
+                ['getjoblog',_('Get job log')]
             ],
             value: params.data.command||'',
             allowBlank: false,
             anchor: '100%',
+            sorted:true,
             singleMode: true,
         });
 
@@ -48,6 +49,7 @@
             allowBlank: true,
             width: 500,
             singleMode: false,
+            sorted:true,
             hidden: !(params.data.command  == 'getstatusbyname')
         });
 
