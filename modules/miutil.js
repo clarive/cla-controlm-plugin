@@ -13,7 +13,6 @@
                 }
                 );
         }
-
 exports.obtainToken = function(agent, urlBase, userName, password,port,timeout,pause) {
        var miutil  = require("miutil");
        var headers = {
@@ -24,9 +23,7 @@ exports.obtainToken = function(agent, urlBase, userName, password,port,timeout,p
         var token = miutil.postServer(agent,timeout, pause,url,headers,content_data).token || '0';
         return token;
 };
-
-
-exports.postWorkFlow = function(url, authorization,  body, timeout, accept_any_cert) {
+exports.postWorkFlow = function(url, authorization,  body, timeout, acceptAnyCert) {
             var reg = require('cla/reg');
             var headers = {
                     'Content-Type': 'multipart/form-data',
@@ -40,12 +37,11 @@ exports.postWorkFlow = function(url, authorization,  body, timeout, accept_any_c
                     headers: headers,
                     body: body,
                     timeout: timeout,
-                    accept_any_cert: accept_any_cert
+                    accept_any_cert: acceptAnyCert
                 }
             });
             return output.content;
 };
-
  exports.geting =   function (agent,timeout, pause,url,authorization) {
            var util = require("cla/util");
            var headers = {
@@ -62,9 +58,8 @@ exports.postWorkFlow = function(url, authorization,  body, timeout, accept_any_c
                 attempts: pause ? timeout / pause : 0
                 })
 };
-
- exports.posting =   function (url, authorization,  body, timeout, accept_any_cert) {
-           if (accept_any_cert)
+ exports.posting =   function (url, authorization,  body, timeout, acceptAnyCert) {
+           if (acceptAnyCert)
 
            var reg = require('cla/reg');
            var util = require("cla/util");
@@ -79,7 +74,7 @@ exports.postWorkFlow = function(url, authorization,  body, timeout, accept_any_c
                     headers: headers,
                     body: body,
                     timeout: timeout,
-                    accept_any_cert: accept_any_cert
+                    accept_any_cert: acceptAnyCert
                 }
             });
             return output.content;

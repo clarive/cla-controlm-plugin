@@ -1,7 +1,5 @@
 var ci = require("cla/ci");
-
 ci.createRole("ControlM");
-
 ci.createClass("controlMServer", {
     form: '/plugin/cla-controlm-plugin/form/controlm-form.js',
     icon: '/plugin/cla-controlm-plugin/icon/controlm.svg',
@@ -27,7 +25,7 @@ ci.createClass("controlMServer", {
             isa: "Int",
             required: true
          },
-        accept_any_cert: {
+        acceptAnyCert: {
             is: "rw",
             isa: "Bool",
             required: true

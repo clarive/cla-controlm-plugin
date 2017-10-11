@@ -27,10 +27,10 @@
         maxLength: '5',
         value: 8443
     });
-    var accept_any_cert = Cla.ui.checkBox({
-        name: 'accept_any_cert',
+    var acceptAnyCert = Cla.ui.checkBox({
+        name: 'acceptAnyCert',
         fieldLabel: _('Accept any Server Certificate'),
-        checked:params.rec.accept_any_cert||false
+        checked:params.rec.acceptAnyCert||false
     });
 
     return [
@@ -38,6 +38,6 @@
         password,
         urlBase,
         port,
-        accept_any_cert
+        acceptAnyCert
     ]
 })
