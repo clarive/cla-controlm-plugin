@@ -70,15 +70,15 @@ To use this operation, just drag this service into the rule and complete the fol
 - **Name -** Name of the rule operation.
 - **Control-M server -** Select your Control-M server from the list.
 - **Operation -** Operation to perform.
-		- Obtain Token 			 		 - (Obtain a Token, first task to do)
-		- Test your WorkFlow             - (Test your JSON file WorkFlow)
-		- Deploy your WorkFlow  		 - (Deploy your WorkFlow file in Control-M)
-		- Run your WorkFlow jobs 		 - (Deploy and execute your WorkFlow file)
-		- Run a job	now	 		 		 - (Run a job in Control-M)
-		- Get status of jobs by jobname	 - (Give you status of a jobs identified by it's jobs name or prefix)
-		- Get status of jobs by Run ID   - (Give you status of a job identified by it's Run ID)
-		- Get job Output         		 - (Obtain the output of jobs identified by jobname prefix or/and job status)
-		- Get job log 			 		 - (Obtain the log of jobs)
+	- ** Obtain Token 		            - ** (Obtain a Token, first task to do)
+	- ** Test your WorkFlow             - ** (Test your JSON file WorkFlow)
+	- ** Deploy your WorkFlow  		 	- ** (Deploy your WorkFlow file in Control-M)
+	- ** Run your WorkFlow jobs 		- ** (Deploy and execute your WorkFlow file)
+	- ** Run a job	now	 		 		- ** (Run a job in Control-M)
+	- ** Get status of jobs by jobname	- ** (Give you status of a jobs identified by it's jobs name or prefix)
+	- ** Get status of jobs by Run ID   - ** (Give you status of a job identified by it's Run ID)
+	- ** Get job Output         		- ** (Obtain the output of jobs identified by jobname prefix or/and job status)
+	- ** Get job log 			 		- ** (Obtain the log of jobs)
 
 - **WorkFlow JSON file -** Some operations require you set the path of a WorkFlow JSON file.
 - **Job name -** Optional value to filter output by the name or prefix of job names, only on some operations.
