@@ -1,4 +1,4 @@
-name: Clarive Control-M Plugin
+name: Control-M Plugin
 description: Control-M plugin will allow you to automate the operations of Control-M from Clarive.
 version: 1.0
 icon: https://cdn.rawgit.com/clarive/cla-controlm-plugin/master/public/icon/controlm.svg?sanitize=true
