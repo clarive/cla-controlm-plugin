@@ -3,7 +3,7 @@ ci.createRole("ControlM");
 ci.createClass("controlMServer", {
     form: '/plugin/cla-controlm-plugin/form/controlm-form.js',
     icon: '/plugin/cla-controlm-plugin/icon/controlm.svg',
-    roles: ["ControlM"],
+    roles: ["ControlM", "ClariveSE"],
     has: {
         username: {
             is: "rw",

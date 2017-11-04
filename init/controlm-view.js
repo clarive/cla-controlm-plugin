@@ -4,6 +4,36 @@ reg.register('service.controlm.action', {
     name: _('Control-M action'),
     icon: '/plugin/cla-controlm-plugin/icon/controlm-service.svg',
     form: '/plugin/cla-controlm-plugin/form/controlm-view-form.js',
+    rulebook: {
+        moniker: 'controlm_task',
+        description: _('Executes Control-M tasks'),
+        required: [ 'server', 'command'],
+        allow: ['server', 'command', 'status', 'json_file', 'job_name', 'job_id',
+        'run_id', 'timeout', 'checktime'],
+        mapper: {
+            'json_file':'jsonFile',
+            'job_name':'jobName',
+            'job_id':'jobId',
+            'run_id':'runId'
+        },
+        examples: [{
+            controlm_task: {
+                server: 'controlm_resource',
+                command: 'token',
+                timeout: '10',
+                check_time: '10'
+            }
+        },{
+            controlm_task: {
+                server: 'controlm_resource',
+                command: 'getstatusbyname',
+                timeout: '10',
+                check_time: '10',
+                status: ['endedok'],
+                job_name: 'test-name'
+            }
+        }]
+    },
     handler: function(ctx, config) {
         var miutil  = require('miutil');
         var log     = require('cla/log');
