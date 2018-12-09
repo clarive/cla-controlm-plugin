@@ -1,6 +1,6 @@
 # Control-M plugin
 
-<img src="https://cdn.rawgit.com/clarive/cla-controlm-plugin/master/public/icon/controlm.svg?sanitize=true" alt="Control-M Plugin" title="Control-M Plugin" width="120" height="120">
+<img src="https://cdn.jsdelivr.net/gh/clarive/cla-controlm-plugin/public/icon/controlm.svg?sanitize=true" alt="Control-M Plugin" title="Control-M Plugin" width="120" height="120">
 
 Control-M plugin will allow you to automate the operations of Control-M from Clarive.
 
